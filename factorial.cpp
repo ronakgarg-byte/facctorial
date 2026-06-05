@@ -16,22 +16,22 @@
 // return 0;
 // 
 // 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-int main(){
-    int n;
-    cin>>n;
+// int main(){
+//     int n;
+//     cin>>n;
     
-   int fact=1;
-   for(int i=1;i<=n;i++){
-    fact=fact*i;
-   }
-cout<<fact;
+//    int fact=1;
+//    for(int i=1;i<=n;i++){
+//     fact=fact*i;
+//    }
+// cout<<fact;
     
 
-return 0;
-}
+// return 0;
+// }
 
 
 
@@ -54,3 +54,18 @@ return 0;
 
 // return 0;
 // }
+#include<iostream>
+using namespace std;
+int fact(int N){
+    if(N<=1){
+        return 1;
+    }else
+        return N*fact(N-1);
+}
+
+int main(){
+    int n;
+    cin>>n;
+    cout<<fact(n);
+return 0;
+}
