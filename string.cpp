@@ -44,7 +44,7 @@
 //     int count = 0;
 
 //     for (int i = 0; i < s.length(); i++) {
-//         if (find == s[i]) {
+//         if (find == s[i])   {
 //             count++;
 //         }
 //     }
@@ -72,13 +72,15 @@ using namespace std;
 int main(){
 string sub="abcddcbaa";
 int maxCount=0;
-char maxWord;
-void mostreapting(string sub);
-{
+char maxWord;//bahr kyuki iski value change nhi krni baar baar 
+
     for(int i=0;i<=sub.length();i++){
-        int count =0;
+        int count =0;//inside the for loop because it will reset count to 0 for new character 
           char word=sub[i];
-         for(int j =0;j<sub.length();j++){
+         for(int j =0;j<sub.length();j++)
+         //pehle andar vala loop kaam krega poora  fir bahar vale loop pe jaayega
+         
+         {
             if(word==sub[j]){
                 count++;
             }
@@ -94,5 +96,5 @@ void mostreapting(string sub);
 cout<<maxCount<<endl;
 cout<<maxWord;
 return 0;
-}
+
 }
