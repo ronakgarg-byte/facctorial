@@ -63,6 +63,7 @@ int fact(int N){
         return N*fact(N-1);
 }
 
+
 int main(){
     int n;
     cin>>n;
